@@ -1,0 +1,506 @@
+/* =======================
+   RESET
+========================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f3ef;
+  color: #222;
+}
+
+/* =======================
+   HEADER
+========================== */
+
+.top-bar {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-bar-inner {
+  max-width: 1350px;
+  margin-left: 0;   /* se pega a la izquierda */
+  margin-right: auto;
+  padding: 8px 8px; /* menos padding izquierdo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  flex-shrink: 0;
+  margin-right: 20px; /* opcional */
+}
+
+.logo {
+  height: 80px;
+}
+
+/* NAV */
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center; /* CENTRAR */
+  flex: 1;                  /* para que ocupe espacio entre logo y botones */
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #444;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.nav-emoji {
+  font-size: 1.3rem;
+}
+
+.nav-item:hover {
+  color: #00796b;
+  transform: translateY(-1px);
+}
+
+/* ICON BUTTONS */
+
+.top-actions button {
+  margin-left: 6px; /* o el valor que quieras */
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* =======================
+   CARRUSEL
+========================== */
+
+.hero-carousel {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0 16px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #000;
+}
+
+.carousel-track {
+  position: relative;
+}
+
+.carousel-slide {
+  display: none;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 2000;
+}
+
+.prev-btn { left: 16px; }
+.next-btn { right: 16px; }
+
+.carousel-slide.active {
+  display: block;
+  animation: slideIn 0.6s ease;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(25px); /* un poquito hacia la derecha */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Flechas */
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 2000; /* <--- AÑADE ESTA LÍNEA */
+}
+
+.carousel-arrow.prev { left: 12px; }
+.carousel-arrow.next { right: 12px; }
+
+
+
+
+/* =======================
+   CATEGORÍAS
+========================== */
+
+.categories-section {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px 24px;
+}
+
+.categories-header h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 10px;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.category-card span {
+  display: block;
+}
+
+.category-card .emoji {
+  font-size: 1.6rem;
+}
+
+.category-card .label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.category-card:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.category-card.active {
+  border-color: #00796b;
+  background: #e0f2f1;
+}
+
+.btn-show-more {
+  margin: 20px auto 0;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #00796b;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* =======================
+   LIBROS
+========================== */
+
+.new-releases-section {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px 32px;
+}
+
+.new-releases-title {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.book-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.book-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.book-price {
+  font-size: 0.9rem;
+  color: #00796b;
+}
+
+.btn-view-all {
+  margin: 24px auto 0;
+  display: block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: none;
+  background: #004d40;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =======================
+   INFO DEL LOCAL
+========================== */
+
+.store-info {
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 0 16px;
+}
+
+.store-info-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.store-info-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.store-info-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.store-info-text .subtitle {
+  font-size: 0.98rem;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.store-info-text h3 {
+  margin-top: 14px;
+  font-size: 1.05rem;
+}
+
+.store-info-text p,
+.store-info-text ul li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.store-info-text ul {
+  margin-left: 20px;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* =======================
+   FOOTER SIMPLE
+========================== */
+
+.simple-footer {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  background: #fff;
+}
+
+.simple-footer a {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: none;
+  color: #00796b;
+}
+
+/* =======================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1000px) {
+  .books-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .store-info-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .main-nav {
+    order: 3;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #faf8f6;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e6e2dd;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding: 24px 0;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+.sucursales-page {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.sucursales-title {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.sucursales-subtitle {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.sucursales-list p {
+  font-size: 18px;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+}
