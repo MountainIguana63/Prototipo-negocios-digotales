@@ -28,13 +28,13 @@ body {
 
 .top-bar-inner {
   max-width: 1350px;
-  margin: 0 auto;          /* centra el contenido en pantallas anchas */
-  padding: 8px 24px;       /* un poco más de aire horizontal opcional */
+  margin-left: 0;   /* se pega a la izquierda */
+  margin-right: auto;
+  padding: 8px 8px; /* menos padding izquierdo */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 .logo-wrapper {
   flex-shrink: 0;
