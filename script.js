@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Ir al catálogo al hacer clic en la lupa
+  const searchBtn = document.querySelector(".search-button");
+  if (searchBtn) {
+    searchBtn.addEventListener("click", () => {
+      window.location.href = "catalogo.html";
+    });
+  }
+
 
   /* ============================================
      CARRUSEL
@@ -59,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const CATEGORIES = [
     { id: "novedades", nombre: "Novedades", emoji: "🆕" },
-    { id: "manga", nombre: "Manga", emoji: "🇯🇵" },
+    { id: "manga", nombre: "Mangas", emoji: "🍣" },
     { id: "romance", nombre: "Romance", emoji: "❤️" },
     { id: "novelas", nombre: "Novelas", emoji: "📖" },
     { id: "infantiles", nombre: "Infantiles", emoji: "🧸" },
@@ -73,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: "politica", nombre: "Política", emoji: "🏛️" },
     { id: "divulgacion", nombre: "Divulgación científica", emoji: "🔬" },
     { id: "biografia", nombre: "Biografía", emoji: "👤" },
-    { id: "ingles", nombre: "Inglés", emoji: "🇬🇧" }
+    { id: "ingles", nombre: "Inglés", emoji: "🗣️" }
   ];
 
   const categoriesContainer = document.getElementById("categories-container");
@@ -163,7 +171,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     list.forEach(book => {
       const card = document.createElement("article");
-      card.className = "book-card";
+card.className = "book-card";
+card.style.cursor = "pointer";
+card.addEventListener("click", () => {
+  window.location.href = `producto.html?id=${book.ID}`;
+});
+
 
       const img = document.createElement("img");
       img.src = book.Imagen;

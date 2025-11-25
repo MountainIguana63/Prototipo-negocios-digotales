@@ -24,10 +24,11 @@
     <span class="emoji">🏠</span>
     Inicio
 </a>
-        <button class="nav-item">
-          <span class="nav-emoji">📚</span>
-          <span class="nav-text">Catálogo</span>
-        </button>
+        <a href="catalogo.html" class="nav-item">
+  <span class="nav-emoji">📚</span>
+  <span class="nav-text">Catálogo</span>
+</a>
+
         <button class="nav-item">
           <span class="nav-emoji">🎁</span>
           <span class="nav-text">Regalos</span>
@@ -37,7 +38,8 @@
       <!-- Iconos de acciones -->
       <div class="top-actions">
         <button class="icon-button" aria-label="Carrito de compras">🧺</button>
-        <button class="icon-button" aria-label="Buscar">🔍</button>
+        <button class="icon-button search-button" aria-label="Buscar">🔍</button>
+
         <button class="icon-button" aria-label="Perfil de usuario">👤</button>
       </div>
     </div>
@@ -76,7 +78,7 @@
     <!-- ============ CATEGORÍAS ============ -->
     <section class="categories-section">
       <div class="categories-header">
-        <h2>Categorías</h2>
+        <h2>Explora las categorías de nuestros libros</h2>
       </div>
 
       <div id="categories-container" class="categories-grid">
@@ -89,14 +91,19 @@
     <!-- ============ LIBROS POR CATEGORÍA ============ -->
     <section class="new-releases-section">
       <h2 class="new-releases-title">
-        DESCUBRE LO NUEVO DE INTERNACIONAL LIBROS Y REGALOS
+        Descubre lo nuevo de Internacional Libros y Regalos
       </h2>
 
-      <div id="books-grid" class="books-grid">
-        <!-- JS insertará los libros -->
-      </div>
+<div id="books-grid" class="books-grid">
+  <!-- JS insertará los libros -->
+</div>
 
-      <button class="btn-view-all">Ver todos los libros</button>
+<div class="view-all-container">
+  <a href="catalogo.html" class="btn-view-all">Ver todos los libros del catálogo</a>
+</div>
+
+
+
     </section>
 
     <!-- ============ INFO DEL LOCAL ============ -->
