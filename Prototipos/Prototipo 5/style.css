@@ -756,56 +756,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* ===== Switch de catálogos (📚 / 🎁 / 📦) ===== */
-
-.catalog-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 24px; /* antes lo tenía .catalog-title */
-}
-
-.catalog-title {
-  margin: 0; /* porque ahora el margen lo maneja el contenedor */
-}
-
-.catalog-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px;
-  border-radius: 999px;
-  border: 1px solid #ddd;
-  background: #fff;
-}
-
-.catalog-switch-pill {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #444;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
-}
-
-.catalog-switch-pill:hover {
-  transform: translateY(-1px);
-}
-
-.catalog-switch-pill.is-active {
-  background: #00796b;
-  color: #fff;
-  cursor: default;
-}
-
-
 .catalog-controls {
   display: flex;
   flex-wrap: wrap;
@@ -911,7 +861,6 @@ body {
   align-items: stretch;
   gap: 8px;
   margin-top: 8px;
-  position: relative;   /* <--- necesario para posicionar las flechas */
 }
 
 .categories-grid.scrollable-categories {
@@ -939,9 +888,6 @@ body {
 
 /* Flechas del carrusel de categorías */
 .categories-arrow {
-  position: absolute;           /* <--- LAS FIJA en vertical */
-  top: 50%;                     /* <--- CENTRO vertical */
-  transform: translateY(-50%); /* <--- ajuste */
   border: none;
   background: #ffffff;
   border-radius: 999px;
@@ -955,21 +901,12 @@ body {
   flex-shrink: 0;
   font-size: 1.4rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
-  z-index: 10;
-}
-#books-categories-prev,
-#gift-categories-prev {
-  left: -14px;   /* Ajustable según gusto */
 }
 
-#books-categories-next,
-#gift-categories-next {
-  right: -14px;  /* Ajustable */
+.categories-arrow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+  background: #f3f3f3;
 }
-
-
-
-
-
 
 

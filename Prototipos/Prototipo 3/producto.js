@@ -91,11 +91,6 @@ if (!bookId) {
             <button id="copy-link-btn" class="btn-copy-link">
             🔗 Copiar enlace del producto
             </button>
-            <p class="product-stock">
-            
-             ${book.UnidadesDisponibles} unidades disponibles.
-            Próximo ingreso: ${book.ProximoIngreso}
-            </p>
 
           </div>
         </div>
@@ -109,7 +104,7 @@ if (!bookId) {
 
 <div class="product-back">
   <a href="index.html" class="btn-go-home">← Volver a inicio</a>
-  <a href="catalogo.html" class="btn-view-all">Ver catálogo en su lugar</a>
+  <a href="index.html" class="btn-view-all">Ver catálogo en su lugar</a>
 </div>
 
       `;

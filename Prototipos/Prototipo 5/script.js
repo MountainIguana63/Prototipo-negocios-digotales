@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.querySelector(".search-button");
   if (searchBtn) {
     searchBtn.addEventListener("click", () => {
-      
+      window.location.href = "catalogo.html";
     });
   }
 
@@ -480,23 +480,3 @@ function renderGifts(list) {
     });
 });
 
-// Redirigir la lupa al catálogo combinado
-document.querySelectorAll(".search-button").forEach(btn => {
-  btn.onclick = () => {
-    window.location.href = "catalogo-combinado.html";
-  };
-});
-
-// FORZAR que la lupa lleve al catálogo combinado
-document.querySelectorAll(".search-button").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    // Detener cualquier acción previa
-    e.stopImmediatePropagation();
-
-    // Si estamos en el catálogo combinado → no redirigimos
-    if (window.location.pathname.includes("catalogo-combinado")) return;
-
-    // En cualquier otra página → redirigir
-    window.location.href = "catalogo-combinado.html";
-  });
-});

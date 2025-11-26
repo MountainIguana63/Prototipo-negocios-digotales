@@ -2,39 +2,38 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo – Internacional Libros & Regalos</title>
+  <title>Internacional Libros & Regalos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
   <!-- ============ HEADER ============ -->
   <header class="top-bar">
     <div class="top-bar-inner">
       <!-- Logo -->
       <div class="logo-wrapper">
         <a href="index.html">
-          <img src="img/logo.jpg" alt="Logo de la tienda" class="logo">
-        </a>
+  <img src="img/logo.jpg" alt="Logo de la tienda" class="logo">
+</a>
       </div>
 
       <!-- Navegación principal -->
       <nav class="main-nav">
         <a href="index.html" class="nav-item">
-          <span class="emoji">🏠</span>
-          Inicio
-        </a>
+    <span class="emoji">🏠</span>
+    Inicio
+</a>
         <a href="catalogo.html" class="nav-item">
-          <span class="nav-emoji">📚</span>
-          <span class="nav-text">Catálogo</span>
-        </a>
-        <a href="regalos.html" class="nav-item">
-          <span class="nav-emoji">🎁</span>
-          <span class="nav-text">Regalos</span>
-        </button>
-      </nav>
+  <span class="nav-emoji">📚</span>
+  <span class="nav-text">Catálogo</span>
+</a>
+
+<a href="regalos.html" class="nav-item">
+  <span class="nav-emoji">🎁</span>
+  <span class="nav-text">Regalos</span>
+</a>
+
 
       <!-- Iconos de acciones -->
       <div class="top-actions">
@@ -45,82 +44,20 @@
     </div>
   </header>
 
-  <!-- ============ CATÁLOGO ============ -->
-  <main class="catalog-page">
-    <main class="catalog-page">
-  <div class="catalog-header-row">
-    <h1 class="catalog-title">INTERNACIONAL LIBROS Y REGALOS</h1>
+    <!-- CONTENIDO -->
+  <main class="sucursales-page">
+    <h1 class="sucursales-title">Sucursales</h1>
+    <h2 class="sucursales-subtitle">Puedes visitarnos en:</h2>
 
-    <div class="catalog-switch" aria-label="Cambiar entre catálogos">
-      <!-- Libros activo -->
-      <a href="catalogo.html" class="catalog-switch-pill is-active" title="Catálogo de libros">📚</a>
-      <!-- Regalos -->
-      <a href="regalos.html" class="catalog-switch-pill" title="Catálogo de regalos">🎁</a>
-      <!-- Combinado -->
-      <a href="catalogo-combinado.html" class="catalog-switch-pill" title="Catálogo combinado">📦</a>
+    <div class="sucursales-list">
+      <p><strong>Las Ramblas, Santa Tecla</strong></p>
+      <p><strong>Galerías:</strong> Nivel 2</p>
+      <p><strong>Metrocentro, San Salvador:</strong> 8va Etapa, Nivel 2</p>
+      <p><strong>Metrocentro, Lourdes:</strong> 3era Etapa</p>
+      <p><strong>Metrocentro, Santa Ana:</strong> 2da Etapa</p>
+      <p><strong>Multiplaza:</strong> Nivel 1</p>
+      <p><strong>Plaza Mundo Soyapango:</strong> 5ta Etapa, Nivel 2</p>
     </div>
-  </div>
-
-
-    <section class="catalog-controls">
-      <div class="catalog-control-group">
-        <span class="catalog-control-label">FILTRAR POR</span>
-        <select id="filter-category" class="catalog-select">
-          <option value="todos">Todos los productos</option>
-          <option value="Manga">Manga</option>
-          <option value="Romance">Romance</option>
-          <option value="Novelas">Novelas</option>
-          <option value="Infantiles">Infantiles</option>
-          <option value="Misterio">Misterio</option>
-          <option value="Ciencia ficción">Ciencia ficción</option>
-          <option value="Desarrollo personal">Desarrollo personal</option>
-          <option value="Autoayuda">Autoayuda</option>
-          <option value="Cine y cultura pop">Cine y cultura pop</option>
-          <option value="Arte y cultura">Arte y cultura</option>
-          <option value="Finanzas y economía">Finanzas y economía</option>
-          <option value="Política">Política</option>
-          <option value="Divulgación científica">Divulgación científica</option>
-          <option value="Biografía">Biografía</option>
-        </select>
-      </div>
-
-      <div class="catalog-control-group">
-        <span class="catalog-control-label">ORDENAR POR</span>
-        <select id="sort-order" class="catalog-select">
-          <option value="caracteristicas">Características</option>
-          <option value="titulo-asc">Alfabéticamente, A-Z</option>
-          <option value="titulo-desc">Alfabéticamente, Z-A</option>
-          <option value="precio-asc">Precio, menor a mayor</option>
-          <option value="precio-desc">Precio, mayor a menor</option>
-          <option value="fecha-asc">Fecha: antiguo(a) a reciente</option>
-          <option value="fecha-desc">Fecha: reciente a antiguo(a)</option>
-        </select>
-      </div>
-
-      <!-- Búsqueda entre ORDENAR POR y número de artículos -->
-      <div class="catalog-search-wrapper">
-        <input
-          type="search"
-          id="search-input"
-          class="catalog-search-input"
-          placeholder="Buscar por título, autor, editorial..."
-        >
-      </div>
-
-      <div class="catalog-count">
-        <span id="items-count">0 artículos</span>
-      </div>
-    </section>
-
-    <section class="catalog-grid-section">
-      <div id="catalog-grid" class="books-grid"></div>
-    </section>
-
-    <section class="catalog-pagination">
-      <button id="prev-page" class="catalog-page-btn" disabled>←</button>
-      <span id="page-indicator">Página 1 de 1</span>
-      <button id="next-page" class="catalog-page-btn" disabled>→</button>
-    </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -212,11 +149,5 @@
 </footer>
 
   <script src="script.js"></script>
-  <script src="catalogo.js"></script>
-
-  <!-- Botpress Webchat -->
-  <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2025/11/26/07/20251126070432-1KR5JZCJ.js" defer></script>
-
 </body>
 </html>

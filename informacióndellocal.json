@@ -1,0 +1,115 @@
+[
+  {
+    "id": "sucursales_horarios",
+    "questions": [
+      "¿Cuáles son las sucursales y horarios de Internacional Libros y Regalos?",
+      "Horarios de atención en tiendas físicas",
+      "¿En qué horarios abren las sucursales?"
+    ],
+    "answer": "Las sucursales y horarios son:\n\n- Las Ramblas, Santa Tecla: Lun–Jue 10:00 a. m.–8:00 p. m.; Vie 10:00 a. m.–10:00 p. m.; Sáb 9:00 a. m.–10:00 p. m.; Dom 9:00 a. m.–8:00 p. m.\n- Galerías: Lun–Vie 10:00 a. m.–7:00 p. m.; Sáb–Dom 9:00 a. m.–7:00 p. m.\n- Metrocentro, San Salvador: Lun–Sáb 9:00 a. m.–7:00 p. m.; Dom 9:00 a. m.–6:00 p. m.\n- Metrocentro, Lourdes: Lun–Dom 10:00 a. m.–7:00 p. m.\n- Metrocentro, Santa Ana: Lun–Dom 10:00 a. m.–7:00 p. m.\n- Multiplaza: Lun–Jue 9:00 a. m.–8:00 p. m.; Vie–Sáb 9:00 a. m.–9:00 p. m.; Dom 9:00 a. m.–7:00 p. m.\n- Plaza Mundo, Soyapango: Lun–Sáb 10:00 a. m.–7:00 p. m.; Dom 10:00 a. m.–6:00 p. m."
+  },
+  {
+    "id": "sucursales_ubicacion_niveles",
+    "questions": [
+      "¿Dónde están ubicadas las sucursales dentro de los centros comerciales?",
+      "Niveles o etapas de las sucursales"
+    ],
+    "answer": "Puedes visitarnos en:\n\n- Las Ramblas, Santa Tecla.\n- Galerías: nivel 2.\n- Metrocentro, San Salvador: 8ª etapa, nivel 2.\n- Metrocentro, Lourdes: 3ª etapa.\n- Metrocentro, Santa Ana: 2ª etapa.\n- Multiplaza: nivel 1.\n- Plaza Mundo Soyapango: 5ª etapa, nivel 2."
+  },
+  {
+    "id": "tiempo_entrega",
+    "questions": [
+      "¿Cuál es el tiempo de entrega a domicilio?",
+      "¿Cuánto tardan los envíos?",
+      "Plazo de entrega de pedidos"
+    ],
+    "answer": "El tiempo estimado de entrega para envíos a domicilio en la Zona Metropolitana de San Salvador y en todo el país es de entre 24 y 72 horas, de lunes a sábado en horario aproximado de 8:00 a. m. a 5:00 p. m."
+  },
+  {
+    "id": "politicas_cambio_footer",
+    "questions": [
+      "¿Cuál es la política básica de cambios?",
+      "Condiciones generales para cambios y devoluciones"
+    ],
+    "answer": "Se aceptan cambios de mercadería dentro de los 30 días posteriores a la compra, presentando el ticket. Los productos con daño editorial o de fábrica aplican para cambio, reintegro o devolución, según evaluación de Internacional Libros y Regalos."
+  },
+  {
+    "id": "enlaces_rapidos",
+    "questions": [
+      "¿Qué enlaces rápidos o secciones legales existen?",
+      "¿Qué información legal encuentro en la web?"
+    ],
+    "answer": "En la sección de Enlaces rápidos se incluyen, entre otros: Nuestras Sucursales, Búsqueda, Políticas de privacidad, Políticas de Garantía, Cambio y Devoluciones, Políticas de envío, Restricciones de promociones, Reversión de pago, Derecho de retracto, Términos y Condiciones y la sección Socio LibroClub."
+  },
+  {
+    "id": "datos_empresa_contacto",
+    "questions": [
+      "¿Quién es la empresa responsable de la tienda en línea?",
+      "Datos de contacto de Internacional Libros y Regalos"
+    ],
+    "answer": "La tienda pertenece a Desarrollos Culturales Salvadoreños S.A. de C.V., nombre comercial Internacional Libros y Regalos, ubicada en Centro comercial Multiplaza, Antiguo Cuscatlán, local B-59, El Salvador. NIT: 0614-051110-107-5. Correo de contacto: info@internacionalregalos.com. Teléfono: 2505-2300."
+  },
+  {
+    "id": "politica_envio",
+    "questions": [
+      "¿Cuál es la política de envío y costos a domicilio?",
+      "Costos de delivery",
+      "Promoción de envío gratis"
+    ],
+    "answer": "Política de envío (domicilio):\n\n- Envío GRATIS por compras de $50.00 en adelante (según vigencia de la promoción indicada en el documento original).\n- Para compras entre $25.00 y $49.99 se aplica una tarifa reducida (aprox. $2.95 según la política mostrada en la imagen).\n- Para compras menores a $25.00 se aplica una tarifa mayor (aprox. $4.95).\n- Internacional Libros y Regalos puede modificar el costo por envío si amplía zonas de cobertura.\n- Las entregas se realizan de lunes a sábado, aproximadamente de 8:00 a. m. a 5:00 p. m., con plazo de 24 a 72 horas en todo el país.\n- Se solicita un documento de identidad válido para la entrega (DUI, pasaporte, carné de residente o licencia).\n- Algunas colonias o zonas consideradas peligrosas quedan fuera de cobertura.\n- También existe la opción de Pick up en sucursal (como Multiplaza), sin costo adicional, pasando a recoger el pedido."
+  },
+  {
+    "id": "condiciones_promociones",
+    "questions": [
+      "¿Cuáles son las condiciones de las promociones vigentes?",
+      "Información sobre Día de socios, regalo por compra y otras promos",
+      "Condiciones de promociones LibroClub"
+    ],
+    "answer": "Las condiciones de promociones incluyen, entre otras:\n\n- Día de socios – 3x2 en toda la tienda: promoción con fechas específicas, válida para socios LibroClub o quienes se afilien al momento de la compra, con monto mínimo y máximo de compra, aplicable en sucursales y sitio web, no combinable con otras promos.\n- Regalo por compra: en fechas determinadas se obsequia un libro específico por compras de un monto mínimo para socios LibroClub; aplica solo mientras duren existencias y no aplica a certificados de regalo.\n- Gratis un juego de cartas: promoción en fechas definidas para socios LibroClub o nuevos afiliados, por la compra de ciertos juegos de cartas de la marca indicada.\n- Precios exclusivos socios LibroClub: precios especiales por tiempo limitado para socios, según disponibilidad y mientras duren existencias.\n- Envío gratis: promoción de envío sin costo a partir de cierto monto de compra y dentro de un período específico, aplicable solo a productos seleccionados y combinable o no con otras promos según se detalle en la comunicación oficial."
+  },
+  {
+    "id": "reversion_pago",
+    "questions": [
+      "¿Cómo funciona la reversión de pago?",
+      "Quiero solicitar reembolso o reversión de mi compra",
+      "Derecho de retracto y reversión de pago"
+    ],
+    "answer": "Puedes solicitar la reversión de tu compra en un lapso de 24 a 72 horas hábiles después de haber efectuado la compra si: deseas ejercer tu derecho de retracto, no recibiste el producto solicitado, el producto no corresponde a lo solicitado o hubo un error de cobro. La solicitud puede hacerse por correo (info@internacionalregalos.com) o teléfono (2505-2300).\n\nSi pagaste con tarjeta de crédito o débito, Internacional Libros y Regalos gestionará la reversión de inmediato ante el banco emisor; el tiempo para ver el monto reflejado depende de las políticas del banco y puede tardar alrededor de 15 días hábiles."
+  },
+  {
+    "id": "socio_libroclub",
+    "questions": [
+      "¿Qué es el programa Socio LibroClub?",
+      "Beneficios de ser socio LibroClub",
+      "¿Cómo me hago socio LibroClub?"
+    ],
+    "answer": "Socio LibroClub es el programa de fidelidad de Internacional Libros y Regalos. Para afiliarte debes hacer una compra mínima (por ejemplo, $20.00) en cualquiera de las librerías y solicitar tu inscripción en caja; te pedirán datos personales y te asignarán un número de socio.\n\nBeneficios típicos:\n- Promociones exclusivas por invitación.\n- Precios especiales por tiempo limitado.\n- Packs y ofertas con precios especiales para socios.\n- Descuento de cumpleaños en toda la tienda.\n- Días de socios con promociones específicas.\n- Sorteos trimestrales entre socios.\n- Preventas con precios especiales.\n- Invitaciones exclusivas a eventos y firmas.\nLa membresía es personal e intransferible; para usarla debes identificarte como socio."
+  },
+  {
+    "id": "politica_privacidad",
+    "questions": [
+      "¿Cuál es la política de privacidad?",
+      "¿Qué hacen con mis datos personales?",
+      "Protección de datos personales"
+    ],
+    "answer": "Desarrollos Culturales Salvadoreños S.A. de C.V., a través de Internacional Libros y Regalos, no comercializa los datos de sus usuarios. Los datos se usan para brindar los servicios del sitio (creación de usuario, compras, comunicaciones, etc.). Solo personal autorizado y proveedores necesarios tienen acceso a la información.\n\nSe recopila información personal para ofrecer un servicio eficiente y personalizado. Los datos de métodos de pago (como número de tarjeta, fecha de validez y CVV) se solicitan a través de la plataforma de pagos, no se almacenan ni se usan sin tu consentimiento.\n\nLa empresa cumple la normativa del país, el RGPD y el Privacy Shield. Los datos pueden usarse para gestionar tu cuenta, prestar y mejorar servicios, facilitar pagos, prevenir fraude, hacer análisis internos, enviarte comunicaciones sobre productos, promociones y noticias (cuando lo permita la ley) y fines administrativos y de auditoría.\n\nLa información puede compartirse con personal de atención al cliente, empleados, subsidiarias, proveedores, asesores y aliados comerciales que la necesiten para los fines descritos. Para otros usos se pedirá tu consentimiento.\n\nPuedes acceder, actualizar, modificar o eliminar tus datos de forma gratuita. Algunos datos pueden conservarse por obligaciones legales o motivos legítimos (créditos o deudas pendientes, fraude, procesos legales, etc.). Los datos se conservarán solo el tiempo necesario para los fines para los que fueron recolectados.\n\nLa política puede actualizarse; cualquier cambio se comunicará según lo exijan las leyes. Para solicitar la eliminación de tu información puedes escribir a info@internacionalregalos.com. La empresa se compromete a mantener la confidencialidad de la información y solo revelarla si lo exige una autoridad judicial competente."
+  },
+  {
+    "id": "politica_reembolso_cambios_devoluciones",
+    "questions": [
+      "¿Cuál es la política de garantía, cambios y devoluciones?",
+      "¿Puedo devolver un producto y pedir reembolso?",
+      "Plazo para cambiar o devolver productos"
+    ],
+    "answer": "Política de garantía, cambio y devoluciones:\n\n- Tienes 30 días a partir de la fecha del ticket de compra para solicitar cambio o devolución.\n- Productos con daños de editorial o de fábrica aplican para cambio, reintegro o devolución.\n- Para gestionar una devolución puedes escribir a info@internacionalregalos.com o llamar al 2505-2300.\n- Si la devolución implica reversión de un pago con tarjeta, el plazo para que se procese es de hasta 15 días desde el reclamo y puede tardar hasta 20 días hábiles en verse reflejado según la política de cada banco.\n- Se aceptan devoluciones solo si el producto está en condiciones originales (envoltorios, cajas, sin uso ni deterioro).\n- Si el cambio se debe a daño de editorial o fábrica, Internacional Libros y Regalos asume el costo del envío para recoger y entregar el nuevo artículo.\n- Es obligatorio conservar y presentar el documento fiscal original al hacer el reclamo; la empresa emitirá los documentos fiscales de ajuste en un plazo de 72 horas.\n- El servicio de envío a domicilio no se reembolsa si el usuario no acepta el pedido por motivos personales o si no está en el domicilio en la fecha pactada."
+  },
+  {
+    "id": "terminos_servicio_generales",
+    "questions": [
+      "¿Cuáles son los términos del servicio de la tienda en línea?",
+      "Términos y condiciones de internacionallibrosyregalos.com",
+      "Condiciones de uso del sitio web"
+    ],
+    "answer": "Internacionallibrosyregalos.com pertenece a Desarrollos Culturales Salvadoreños S.A. de C.V. (NIT 0614-051110-107-5), con domicilio en Centro Comercial Multiplaza, Antiguo Cuscatlán, local B-59, El Salvador. Teléfono 2505-2300, correo info@internacionalregalos.com.\n\nMétodos de pago: tarjetas de crédito y débito (Visa, Mastercard, American Express). Las transacciones dependen de la verificación bancaria y deben ser realizadas por el titular de la tarjeta. La tienda no es responsable por el uso de tarjetas robadas si el banco autoriza la transacción y los datos coinciden.\n\nAl registrarte como usuario aceptas los Términos y Condiciones, Política de Privacidad y Política de Cambios. El uso del sitio implica aceptación total de estas políticas. La empresa puede modificar o interrumpir el servicio, suspender el sitio o limitar funciones sin previo aviso.\n\nEl usuario debe proporcionar información verdadera, exacta y completa, y es responsable de mantenerla actualizada y de la actividad de su cuenta. Se prohíbe usar nombres de usuario ofensivos, ajenos o marcas sin autorización, así como crear cuentas con robots.\n\nSe otorga una licencia personal, limitada y no transferible para usar el sitio y los contenidos solo para uso personal y no comercial (salvo permiso escrito). Las imágenes y colores de productos pueden variar según el dispositivo.\n\nCompra de productos: solo se pueden adquirir artículos disponibles en el sitio, mostrados en dólares estadounidenses con IVA incluido cuando aplica. El precio a pagar es el mostrado al confirmar la compra; si hay errores o diferencias se corrigen contactando a la empresa. Puede haber falta de inventario; en ese caso se ofrece cambio por otro producto o cancelación sin costo.\n\nServicio a domicilio: se aplican tarifas según monto de compra; las entregas se realizan de lunes a sábado, con plazo de 24 a 72 horas y cobertura a nivel nacional salvo zonas peligrosas. Se solicita documento de identidad para la entrega.\n\nFacturación y pago: la facturación se hace tras preparar el pedido y puede variar respecto al carrito si algún producto está agotado. El pago se realiza con tarjeta; si el monto final es menor se reintegra la diferencia, y si es mayor se coordina el cobro adicional antes de la entrega. La empresa puede habilitar o deshabilitar métodos de pago sin aviso.\n\nDevoluciones: se rigen por la política descrita en \"política_reembolso_cambios_devoluciones\".\n\nCupones: requieren usuario registrado, se ingresan en el carrito, tienen vigencia limitada, suelen ser válidos una vez por usuario y dirección, no aplican a costos de envío y pueden deshabilitarse sin previo aviso.\n\nPropiedad intelectual: marcas, logos, códigos y contenidos están protegidos; el acceso al sitio no otorga derechos de uso comercial. Se prohíbe copiar, imitar logos, usar links o framing no autorizados y cualquier uso que viole estos derechos.\n\nRevisión de términos: la empresa puede modificar los Términos; es responsabilidad del usuario revisarlos periódicamente. El uso posterior del sitio implica aceptación de los cambios.\n\nLimitación de responsabilidad: ni Internacional Libros y Regalos ni sus proveedores serán responsables por daños especiales, incidentales o consecuentes, ni por pérdida de datos o interrupciones de servicio cuando sean ajenas a su control."
+  }
+]

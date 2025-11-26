@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo – Internacional Libros & Regalos</title>
+  <title>Catálogo de Regalos – Internacional Libros & Regalos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
 
 
   <!-- ============ HEADER ============ -->
@@ -33,7 +33,7 @@
         <a href="regalos.html" class="nav-item">
           <span class="nav-emoji">🎁</span>
           <span class="nav-text">Regalos</span>
-        </button>
+        </a>
       </nav>
 
       <!-- Iconos de acciones -->
@@ -45,28 +45,32 @@
     </div>
   </header>
 
-  <!-- ============ CATÁLOGO ============ -->
+  <!-- ============ CONTENIDO PRINCIPAL ============ -->
   <main class="catalog-page">
     <main class="catalog-page">
   <div class="catalog-header-row">
-    <h1 class="catalog-title">INTERNACIONAL LIBROS Y REGALOS</h1>
+    <h1 class="catalog-title">Todos nuestros productos</h1>
 
     <div class="catalog-switch" aria-label="Cambiar entre catálogos">
-      <!-- Libros activo -->
-      <a href="catalogo.html" class="catalog-switch-pill is-active" title="Catálogo de libros">📚</a>
+      <!-- Libros -->
+      <a href="catalogo.html" class="catalog-switch-pill" title="Catálogo de libros">📚</a>
       <!-- Regalos -->
       <a href="regalos.html" class="catalog-switch-pill" title="Catálogo de regalos">🎁</a>
-      <!-- Combinado -->
-      <a href="catalogo-combinado.html" class="catalog-switch-pill" title="Catálogo combinado">📦</a>
+      <!-- Combinado activo -->
+      <a href="catalogo-combinado.html" class="catalog-switch-pill is-active" title="Catálogo combinado">📦</a>
     </div>
   </div>
 
 
+    <!-- Controles: filtros, orden y búsqueda -->
     <section class="catalog-controls">
+      <!-- Filtro por categoría -->
       <div class="catalog-control-group">
         <span class="catalog-control-label">FILTRAR POR</span>
         <select id="filter-category" class="catalog-select">
           <option value="todos">Todos los productos</option>
+
+          <!-- Categorías de LIBROS -->
           <option value="Manga">Manga</option>
           <option value="Romance">Romance</option>
           <option value="Novelas">Novelas</option>
@@ -81,9 +85,24 @@
           <option value="Política">Política</option>
           <option value="Divulgación científica">Divulgación científica</option>
           <option value="Biografía">Biografía</option>
+
+          <!-- Categorías de REGALOS -->
+          <option value="Bolsas y mochilas">Bolsas y mochilas</option>
+          <option value="Adornos navideños">Adornos navideños</option>
+          <option value="Papel de regalo">Papel de regalo</option>
+          <option value="Útiles">Útiles</option>
+          <option value="Llavero">Llavero</option>
+          <option value="Puzzles">Puzzles</option>
+          <option value="Herramientas">Herramientas</option>
+          <option value="Tazas y vasos">Tazas y vasos</option>
+          <option value="Electrónicos">Electrónicos</option>
+          <option value="Decoración">Decoración</option>
+          <option value="Separador de libros">Separador de libros</option>
+          <option value="Tarjeta de regalo">Tarjeta de regalo</option>
         </select>
       </div>
 
+      <!-- Ordenar -->
       <div class="catalog-control-group">
         <span class="catalog-control-label">ORDENAR POR</span>
         <select id="sort-order" class="catalog-select">
@@ -97,13 +116,13 @@
         </select>
       </div>
 
-      <!-- Búsqueda entre ORDENAR POR y número de artículos -->
+      <!-- Búsqueda -->
       <div class="catalog-search-wrapper">
         <input
           type="search"
           id="search-input"
           class="catalog-search-input"
-          placeholder="Buscar por título, autor, editorial..."
+          placeholder="Buscar por título, autor, nombre, marca o categoría..."
         >
       </div>
 
@@ -112,10 +131,12 @@
       </div>
     </section>
 
+    <!-- GRID -->
     <section class="catalog-grid-section">
       <div id="catalog-grid" class="books-grid"></div>
     </section>
 
+    <!-- Paginación -->
     <section class="catalog-pagination">
       <button id="prev-page" class="catalog-page-btn" disabled>←</button>
       <span id="page-indicator">Página 1 de 1</span>
@@ -212,7 +233,7 @@
 </footer>
 
   <script src="script.js"></script>
-  <script src="catalogo.js"></script>
+  <script src="catalogo-combinado.js"></script>
 
   <!-- Botpress Webchat -->
   <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
@@ -220,3 +241,6 @@
 
 </body>
 </html>
+
+
+

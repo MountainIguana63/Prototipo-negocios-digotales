@@ -6,17 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-...
-...
-<!-- BOTPRESS CHATBOT -->
-<script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/11/26/07/20251126070432-1KR5JZCJ.js" defer></script>
-
-</body>
-</html>
-
-
-
 
 <body>
   <!-- ============ HEADER ============ -->
@@ -40,11 +29,10 @@
   <span class="nav-text">Catálogo</span>
 </a>
 
-<a href="regalos.html" class="nav-item">
-  <span class="nav-emoji">🎁</span>
-  <span class="nav-text">Regalos</span>
-</a>
-
+        <button class="nav-item">
+          <span class="nav-emoji">🎁</span>
+          <span class="nav-text">Regalos</span>
+        </button>
       </nav>
 
       <!-- Iconos de acciones -->
@@ -88,98 +76,38 @@
     </section>
 
     <!-- ============ CATEGORÍAS ============ -->
-<!-- ============ CATEGORÍAS LIBROS ============ -->
-<section class="categories-section">
-  <div class="categories-header">
-    <h2>Explora las categorías de nuestros libros</h2>
-  </div>
+    <section class="categories-section">
+      <div class="categories-header">
+        <h2>Explora las categorías de nuestros libros</h2>
+      </div>
 
-  <div class="categories-scroll-wrapper">
-    <button id="books-categories-prev"
-            class="categories-arrow"
-            aria-label="Categorías anteriores">
-      ‹
-    </button>
+      <div id="categories-container" class="categories-grid">
+        <!-- JS inserta las categorías -->
+      </div>
 
-    <div id="categories-container"
-         class="categories-grid scrollable-categories">
-      <!-- JS inserta las categorías de libros -->
-    </div>
+      <button id="toggle-categories" class="btn-show-more">Mostrar más</button>
+    </section>
 
-    <button id="books-categories-next"
-            class="categories-arrow"
-            aria-label="Más categorías">
-      ›
-    </button>
-  </div>
-</section>
-
-
-     <!-- ============ LIBROS POR CATEGORÍA ============ -->
+    <!-- ============ LIBROS POR CATEGORÍA ============ -->
     <section class="new-releases-section">
       <h2 class="new-releases-title">
         Descubre lo nuevo de Internacional Libros y Regalos
       </h2>
 
-      <div id="books-grid" class="books-grid">
-        <!-- JS insertará los libros -->
-      </div>
+<div id="books-grid" class="books-grid">
+  <!-- JS insertará los libros -->
+</div>
 
-      <div class="view-all-container">
-        <a href="catalogo.html" class="btn-view-all">
-          Ver todos los libros del catálogo
-        </a>
-      </div>
+<div class="view-all-container">
+  <a href="catalogo.html" class="btn-view-all">Ver todos los libros del catálogo</a>
+</div>
+
+
+
     </section>
-
-    <!-- ============ CATEGORÍAS REGALOS ============ -->
-    <section class="categories-section">
-      <div class="categories-header">
-        <h2>Explora los distintos regalos que ofrecemos</h2>
-      </div>
-
-      <div class="categories-scroll-wrapper">
-        <button id="gift-categories-prev"
-                class="categories-arrow"
-                aria-label="Categorías anteriores de regalos">
-          ‹
-        </button>
-
-        <div id="gift-categories-container"
-             class="categories-grid scrollable-categories">
-          <!-- JS inserta las categorías de regalos -->
-        </div>
-
-        <button id="gift-categories-next"
-                class="categories-arrow"
-                aria-label="Más categorías de regalos">
-          ›
-        </button>
-      </div>
-    </section>
-
-    <!-- ============ REGALOS POR CATEGORÍA ============ -->
-    <section class="new-releases-section">
-      <h2 class="new-releases-title gifts-title">
-        DESCUBRE LAS NOVEDADES EN NUESTROS REGALOS
-      </h2>
-
-      <div id="gifts-grid" class="books-grid">
-        <!-- JS insertará los regalos -->
-      </div>
-
-      <div class="view-all-container">
-<a href="regalos.html" class="btn-view-all">Ver todos los regalos disponibles</a>
-
-      </div>
-    </section>
-
-
-
 
     <!-- ============ INFO DEL LOCAL ============ -->
     <section class="store-info">
-
       <div class="store-info-container">
 
         <div class="store-info-image">

@@ -756,56 +756,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* ===== Switch de catálogos (📚 / 🎁 / 📦) ===== */
-
-.catalog-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 24px; /* antes lo tenía .catalog-title */
-}
-
-.catalog-title {
-  margin: 0; /* porque ahora el margen lo maneja el contenedor */
-}
-
-.catalog-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px;
-  border-radius: 999px;
-  border: 1px solid #ddd;
-  background: #fff;
-}
-
-.catalog-switch-pill {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #444;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
-}
-
-.catalog-switch-pill:hover {
-  transform: translateY(-1px);
-}
-
-.catalog-switch-pill.is-active {
-  background: #00796b;
-  color: #fff;
-  cursor: default;
-}
-
-
 .catalog-controls {
   display: flex;
   flex-wrap: wrap;
@@ -911,7 +861,6 @@ body {
   align-items: stretch;
   gap: 8px;
   margin-top: 8px;
-  position: relative;   /* <--- necesario para posicionar las flechas */
 }
 
 .categories-grid.scrollable-categories {
@@ -939,9 +888,6 @@ body {
 
 /* Flechas del carrusel de categorías */
 .categories-arrow {
-  position: absolute;           /* <--- LAS FIJA en vertical */
-  top: 50%;                     /* <--- CENTRO vertical */
-  transform: translateY(-50%); /* <--- ajuste */
   border: none;
   background: #ffffff;
   border-radius: 999px;
@@ -955,21 +901,197 @@ body {
   flex-shrink: 0;
   font-size: 1.4rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
-  z-index: 10;
-}
-#books-categories-prev,
-#gift-categories-prev {
-  left: -14px;   /* Ajustable según gusto */
 }
 
-#books-categories-next,
-#gift-categories-next {
-  right: -14px;  /* Ajustable */
+.categories-arrow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+  background: #f3f3f3;
 }
 
+/* =======================
+   Chatbot "Atenea"
+   ======================= */
 
+#atenea-chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  padding: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#atenea-chatbot-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+/* Ventana del chat */
 
+#atenea-chatbot-window {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 340px;
+  max-height: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: inherit;
+}
+
+/* Cabecera */
+
+.atenea-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #1f2937; /* gris oscuro elegante */
+  color: #f9fafb;
+}
+
+.atenea-header-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #f9fafb;
+}
+
+.atenea-header-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atenea-header-info {
+  flex: 1;
+}
+
+.atenea-header-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.atenea-header-subtitle {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.atenea-header-close {
+  background: transparent;
+  border: none;
+  color: #f9fafb;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Cuerpo del chat */
+
+.atenea-messages {
+  padding: 10px;
+  background: #f3f4f6;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scroll-behavior: smooth;
+}
+
+/* Burbuja de mensaje */
+
+.atenea-message {
+  max-width: 90%;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.atenea-message.user {
+  align-self: flex-end;
+  background: #2563eb; /* azul */
+  color: #f9fafb;
+  border-bottom-right-radius: 4px;
+}
+
+.atenea-message.bot {
+  align-self: flex-start;
+  background: #ffffff;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+/* Pie: input */
+
+.atenea-input-area {
+  display: flex;
+  gap: 6px;
+  padding: 8px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.atenea-input-area input[type="text"] {
+  flex: 1;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.atenea-input-area input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.4);
+}
+
+.atenea-input-area button {
+  border-radius: 999px;
+  border: none;
+  padding: 0 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: #2563eb;
+  color: #f9fafb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atenea-input-area button:hover {
+  background: #1d4ed8;
+}
+
+/* Scrollbar sutil */
+.atenea-messages::-webkit-scrollbar {
+  width: 6px;
+}
+.atenea-messages::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
 
 

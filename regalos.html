@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo – Internacional Libros & Regalos</title>
+  <title>Catálogo de Regalos – Internacional Libros & Regalos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,7 +33,7 @@
         <a href="regalos.html" class="nav-item">
           <span class="nav-emoji">🎁</span>
           <span class="nav-text">Regalos</span>
-        </button>
+        </a>
       </nav>
 
       <!-- Iconos de acciones -->
@@ -45,17 +45,17 @@
     </div>
   </header>
 
-  <!-- ============ CATÁLOGO ============ -->
+  <!-- ============ CATÁLOGO DE REGALOS ============ -->
   <main class="catalog-page">
     <main class="catalog-page">
   <div class="catalog-header-row">
-    <h1 class="catalog-title">INTERNACIONAL LIBROS Y REGALOS</h1>
+    <h1 class="catalog-title">Catálogo de regalos</h1>
 
     <div class="catalog-switch" aria-label="Cambiar entre catálogos">
-      <!-- Libros activo -->
-      <a href="catalogo.html" class="catalog-switch-pill is-active" title="Catálogo de libros">📚</a>
-      <!-- Regalos -->
-      <a href="regalos.html" class="catalog-switch-pill" title="Catálogo de regalos">🎁</a>
+      <!-- Libros -->
+      <a href="catalogo.html" class="catalog-switch-pill" title="Catálogo de libros">📚</a>
+      <!-- Regalos activo -->
+      <a href="regalos.html" class="catalog-switch-pill is-active" title="Catálogo de regalos">🎁</a>
       <!-- Combinado -->
       <a href="catalogo-combinado.html" class="catalog-switch-pill" title="Catálogo combinado">📦</a>
     </div>
@@ -66,21 +66,19 @@
       <div class="catalog-control-group">
         <span class="catalog-control-label">FILTRAR POR</span>
         <select id="filter-category" class="catalog-select">
-          <option value="todos">Todos los productos</option>
-          <option value="Manga">Manga</option>
-          <option value="Romance">Romance</option>
-          <option value="Novelas">Novelas</option>
-          <option value="Infantiles">Infantiles</option>
-          <option value="Misterio">Misterio</option>
-          <option value="Ciencia ficción">Ciencia ficción</option>
-          <option value="Desarrollo personal">Desarrollo personal</option>
-          <option value="Autoayuda">Autoayuda</option>
-          <option value="Cine y cultura pop">Cine y cultura pop</option>
-          <option value="Arte y cultura">Arte y cultura</option>
-          <option value="Finanzas y economía">Finanzas y economía</option>
-          <option value="Política">Política</option>
-          <option value="Divulgación científica">Divulgación científica</option>
-          <option value="Biografía">Biografía</option>
+          <option value="todos">Todos los regalos</option>
+          <option value="Adornos navideños">Adornos navideños</option>
+          <option value="Papel de regalo">Papel de regalo</option>
+          <option value="Tazas y vasos">Tazas y vasos</option>
+          <option value="Separador de libros">Separador de libros</option>
+          <option value="Tarjeta de regalo">Tarjeta de regalo</option>
+          <option value="Útiles">Útiles</option>
+          <option value="Llavero">Llavero</option>
+          <option value="Puzzles">Puzzles</option>
+          <option value="Herramientas">Herramientas</option>
+          <option value="Electrónicos">Electrónicos</option>
+          <option value="Decoración">Decoración</option>
+          <option value="Bolsas y mochilas">Bolsas y mochilas</option>
         </select>
       </div>
 
@@ -88,8 +86,8 @@
         <span class="catalog-control-label">ORDENAR POR</span>
         <select id="sort-order" class="catalog-select">
           <option value="caracteristicas">Características</option>
-          <option value="titulo-asc">Alfabéticamente, A-Z</option>
-          <option value="titulo-desc">Alfabéticamente, Z-A</option>
+          <option value="nombre-asc">Alfabéticamente, A-Z</option>
+          <option value="nombre-desc">Alfabéticamente, Z-A</option>
           <option value="precio-asc">Precio, menor a mayor</option>
           <option value="precio-desc">Precio, mayor a menor</option>
           <option value="fecha-asc">Fecha: antiguo(a) a reciente</option>
@@ -97,13 +95,13 @@
         </select>
       </div>
 
-      <!-- Búsqueda entre ORDENAR POR y número de artículos -->
+      <!-- Búsqueda -->
       <div class="catalog-search-wrapper">
         <input
           type="search"
           id="search-input"
           class="catalog-search-input"
-          placeholder="Buscar por título, autor, editorial..."
+          placeholder="Buscar por nombre, marca, categoría..."
         >
       </div>
 
@@ -212,7 +210,7 @@
 </footer>
 
   <script src="script.js"></script>
-  <script src="catalogo.js"></script>
+  <script src="regalos-catalogo.js"></script>
 
   <!-- Botpress Webchat -->
   <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js"></script>
@@ -220,3 +218,4 @@
 
 </body>
 </html>
+
