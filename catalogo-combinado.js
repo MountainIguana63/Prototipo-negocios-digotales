@@ -203,43 +203,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render de cada tarjeta
   // ------------------------
   function renderCard(item) {
-    const card = document.createElement("article");
-    card.className = "book-card";
-    card.style.cursor = "pointer";
+  const card = document.createElement("article");
+  card.className = "book-card";
+  card.style.cursor = "pointer";
 
-    const img = document.createElement("img");
-    img.src = item.imagen;
-    img.alt = item.titulo || (item.tipo === "libro" ? "Libro" : "Regalo");
+  const img = document.createElement("img");
+  img.src = item.imagen;
+  img.alt = item.titulo || (item.tipo === "libro" ? "Libro" : "Regalo");
 
-    const title = document.createElement("h3");
-    title.className = "book-title";
-    title.textContent = item.titulo;
+  const title = document.createElement("h3");
+  title.className = "book-title";
+  title.textContent = item.titulo;
 
-    const price = document.createElement("p");
-    price.className = "book-price";
-    price.textContent = `$${item.precio.toFixed(2)}`;
+  const price = document.createElement("p");
+  price.className = "book-price";
+  price.textContent = `$${item.precio.toFixed(2)}`;
 
-    const meta = document.createElement("p");
-    meta.className = "book-author";
-    // Ej: "Libro · Manga" o "Regalo · Tazas y vasos"
-    const etiquetaTipo = item.tipo === "libro" ? "Libro" : "Regalo";
-    meta.textContent = `${etiquetaTipo} · ${item.categoria || "Sin categoría"}`;
+  card.appendChild(img);
+  card.appendChild(title);
+  card.appendChild(price);
 
-    card.appendChild(img);
-    card.appendChild(title);
-    card.appendChild(price);
-    card.appendChild(meta);
+  card.addEventListener("click", () => {
+    if (item.tipo === "libro") {
+      window.location.href = `producto.html?id=${encodeURIComponent(item.id)}`;
+    } else {
+      window.location.href = `producto-regalo.html?id=${encodeURIComponent(item.id)}`;
+    }
+  });
 
-    card.addEventListener("click", () => {
-      if (item.tipo === "libro") {
-        window.location.href = `producto.html?id=${encodeURIComponent(item.id)}`;
-      } else {
-        window.location.href = `producto-regalo.html?id=${encodeURIComponent(item.id)}`;
-      }
-    });
-
-    grid.appendChild(card);
-  }
+  grid.appendChild(card);
+}
 
   // ------------------------
   // Eventos
